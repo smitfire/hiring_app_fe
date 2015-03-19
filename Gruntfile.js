@@ -11,7 +11,7 @@ module.exports = function(grunt) {
       },
       my_target: {
         files: {
-          'build/main.min.js': ['javascript/*.js', 'bower_components/bower-tinder-js/*.js']
+          'build/main.min.js': ['javascript/*.js', 'bower_components/bower-hiring-js/*.js']
         }
       }
     },
