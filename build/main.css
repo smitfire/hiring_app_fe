@@ -1,0 +1,78 @@
+body {
+  background: url("data:image/svg+xml;utf8,\a   <svg xmlns='http://www.w3.org/2000/svg' version='1.1'\a        height='50px' width='120px'>\a     <text x='0' y='15' fill='grey' font-size='20'>No people left!</text>\a   </svg>") center center no-repeat; }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px; }
+
+.card {
+  position: absolute; }
+  .card .description {
+    margin-bottom: 2em;
+    height: 6em; }
+
+.actions {
+  text-align: center; }
+  .actions .btn {
+    width: 49%; }
+
+.swipe {
+  -webkit-transform-origin: 50% 80%;
+          transform-origin: 50% 80%; }
+
+.swipe-right {
+  -webkit-animation: swipe-right .8s ease-in-out;
+          animation: swipe-right .8s ease-in-out; }
+
+.swipe-left {
+  -webkit-animation: swipe-left .8s ease-in-out;
+          animation: swipe-left .8s ease-in-out; }
+
+@-webkit-keyframes swipe-right {
+  0% {
+    -webkit-transform: translateX(0%) rotate(0deg);
+            transform: translateX(0%) rotate(0deg);
+    opacity: 1;
+    display: block; }
+  100% {
+    -webkit-transform: translateX(30%) rotate(20deg);
+            transform: translateX(30%) rotate(20deg);
+    opacity: 0;
+    display: none; } }
+
+@keyframes swipe-right {
+  0% {
+    -webkit-transform: translateX(0%) rotate(0deg);
+            transform: translateX(0%) rotate(0deg);
+    opacity: 1;
+    display: block; }
+  100% {
+    -webkit-transform: translateX(30%) rotate(20deg);
+            transform: translateX(30%) rotate(20deg);
+    opacity: 0;
+    display: none; } }
+@-webkit-keyframes swipe-left {
+  0% {
+    -webkit-transform: translateX(0%) rotate(0deg);
+            transform: translateX(0%) rotate(0deg);
+    opacity: 1;
+    display: block; }
+  100% {
+    -webkit-transform: translateX(-30%) rotate(-20deg);
+            transform: translateX(-30%) rotate(-20deg);
+    opacity: 0;
+    display: none; } }
+@keyframes swipe-left {
+  0% {
+    -webkit-transform: translateX(0%) rotate(0deg);
+            transform: translateX(0%) rotate(0deg);
+    opacity: 1;
+    display: block; }
+  100% {
+    -webkit-transform: translateX(-30%) rotate(-20deg);
+            transform: translateX(-30%) rotate(-20deg);
+    opacity: 0;
+    display: none; } }

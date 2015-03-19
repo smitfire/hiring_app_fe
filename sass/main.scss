@@ -1,0 +1,55 @@
+@import 'mixins';
+
+body {
+  background: url("data:image/svg+xml;utf8,
+  <svg xmlns='http://www.w3.org/2000/svg' version='1.1'
+       height='50px' width='120px'>
+    <text x='0' y='15' fill='grey' font-size='20'>No people left!</text>
+  </svg>") center center no-repeat;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.card {
+  position: absolute;
+
+  .description {
+    margin-bottom: 2em;
+    height: 6em;
+  }
+}
+
+.actions {
+  text-align: center;
+
+  .btn {
+    width: 49%;
+  }
+}
+
+.swipe {
+  transform-origin: 50% 80%;
+}
+
+.swipe-right {
+  @include animation('swipe-right .8s ease-in-out');
+}
+.swipe-left {
+  @include animation('swipe-left .8s ease-in-out');
+}
+
+@include keyframes(swipe-right) {
+  0%   { transform: translateX(0%) rotate(0deg); opacity: 1; display: block; }
+  100% { transform: translateX(30%) rotate(20deg); opacity: 0; display: none; }
+}
+
+@include keyframes(swipe-left) {
+  0%   { transform: translateX(0%) rotate(0deg); opacity: 1; display: block; }
+  100% { transform: translateX(-30%) rotate(-20deg); opacity: 0; display: none; }
+}
